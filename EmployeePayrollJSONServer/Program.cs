@@ -25,31 +25,22 @@ namespace EmployeePayrollJSONServer
             var response = client.Execute(request);
             Console.WriteLine(response.Content);
         }
+        public static void Update(Employee employee,int id)
+        {
+            RestClient client = new RestClient("http://localhost:3000");
+            RestRequest request = new RestRequest("/employees/"+id, Method.PUT);
+            request.AddParameter("application/json", JsonConvert.SerializeObject(employee), ParameterType.RequestBody);
+            var response = client.Execute(request);
+            Console.WriteLine(response.Content);
+        }
         static void Main(string[] args)
         {
+            Update(new Employee { name = "Ram", salary = 2000 }, 7);
             var list = getEmployee();
             foreach (var item in list)
             {
-                Console.WriteLine(item.name);
+                Console.WriteLine(item.name+" "+item.salary);
             }
-            Add(new Employee()
-            {
-                name = "Astha",
-                salary = 40000
-            }
-            );
-            Add(new Employee()
-            {
-                name = "Rahul",
-                salary = 4000
-            }
-            );
-            Add(new Employee()
-            {
-                name = "Ram",
-                salary = 1000
-            }
-            );
         }
     }
 }
