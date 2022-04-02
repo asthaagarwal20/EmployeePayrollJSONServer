@@ -37,7 +37,19 @@ namespace EmployeePayrollJSONServer
                 name = "Astha",
                 salary = 40000
             }
-            ) ;
+            );
+            Add(new Employee()
+            {
+                name = "Rahul",
+                salary = 4000
+            }
+            );
+            Add(new Employee()
+            {
+                name = "Ram",
+                salary = 1000
+            }
+            );
         }
     }
 }

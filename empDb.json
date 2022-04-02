@@ -3,17 +3,37 @@
     {
       "id": 1,
       "name": "Pankaj",
-      "salary": "10000"
+      "salary": 10000
     },
     {
       "id": 2,
       "name": "David",
-      "salary": "1000"
+      "salary": 1000
     },
     {
       "id": 3,
       "name": "Lisa",
-      "salary": "5000"
+      "salary": 5000
     },
+    {
+      "id": 4,
+      "name": "Astha",
+      "salary": 40000
+    },
+    {
+      "id": 5,
+      "name": "Astha",
+      "salary": 40000
+    },
+    {
+      "id": 6,
+      "name": "Rahul",
+      "salary": 4000
+    },
+    {
+      "id": 7,
+      "name": "Ram",
+      "salary": 1000
+    }
   ]
 }
