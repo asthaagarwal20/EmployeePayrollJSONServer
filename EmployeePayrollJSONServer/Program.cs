@@ -17,6 +17,14 @@ namespace EmployeePayrollJSONServer
             var response =  client.Execute(request);
             return JsonConvert.DeserializeObject<List<Employee>>(response.Content);
         }
+        public static void Delete(int id)
+        {
+            RestClient client = new RestClient("http://localhost:3000");
+            RestRequest request = new RestRequest("/employees/"+id, Method.DELETE);
+            var response = client.Execute(request);
+            Console.WriteLine(response.Content);
+
+        }
         public static void Add(Employee employee)
         {
             RestClient client = new RestClient("http://localhost:3000");
@@ -35,7 +43,7 @@ namespace EmployeePayrollJSONServer
         }
         static void Main(string[] args)
         {
-            Update(new Employee { name = "Ram", salary = 2000 }, 7);
+            Delete(5);
             var list = getEmployee();
             foreach (var item in list)
             {
