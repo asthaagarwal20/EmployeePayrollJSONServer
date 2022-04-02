@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayrollJSONServer", "EmployeePayrollJSONServer.csproj", "{6AB43FF0-0102-48D0-9C38-7D9D6240C390}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AB43FF0-0102-48D0-9C38-7D9D6240C390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB43FF0-0102-48D0-9C38-7D9D6240C390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB43FF0-0102-48D0-9C38-7D9D6240C390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB43FF0-0102-48D0-9C38-7D9D6240C390}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13FEFFC2-05C8-4944-BF11-1A279B731E98}
+	EndGlobalSection
+EndGlobal
